@@ -9,6 +9,13 @@ pipeline{
                git branch: 'main', credentialsId: '836f1cd0-78c0-4c51-a21c-d365f759f7b6', url: 'https://github.com/naveena3993/Jenkins.git'
            }
         }
+        stage('Git checkout'){
+            steps{
+                sh """
+                terraform 0.13upgrade
+                 """
+           }
+        }
         stage('Terraform Init'){
             
             steps {
