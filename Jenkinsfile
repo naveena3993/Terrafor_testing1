@@ -12,7 +12,7 @@ pipeline{
         stage('Git'){
             steps{
                 sh """
-                terraform 0.13upgrade
+                terraform 0.13upgrade -yes
                  """
            }
         }
