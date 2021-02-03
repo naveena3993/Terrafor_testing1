@@ -1,4 +1,3 @@
-terraform 0.13upgrade
 provider "azurerm" {
     
     version ">=2.26"
@@ -14,8 +13,6 @@ provider "azurerm" {
     }
   }
 }
-
-
 
 resource "azurerm_resource_group" "example" {
   name     = "adi-eus-devops-poc-rg"
